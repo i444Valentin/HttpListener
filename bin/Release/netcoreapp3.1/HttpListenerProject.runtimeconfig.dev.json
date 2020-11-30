@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Walentin\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Walentin\\.nuget\\packages"
+    ]
+  }
+}
