@@ -21,3 +21,4 @@ C:\Users\Walentin\source\repos\StartCourse_3\HttpListener\obj\Release\netcoreapp
 C:\Users\Walentin\source\repos\StartCourse_3\HttpListener\obj\Release\netcoreapp3.1\HttpListenerProject.csproj.CopyComplete
 C:\Users\Walentin\source\repos\StartCourse_3\HttpListener\obj\Release\netcoreapp3.1\HttpListenerProject.dll
 C:\Users\Walentin\source\repos\StartCourse_3\HttpListener\obj\Release\netcoreapp3.1\HttpListenerProject.pdb
+C:\Users\Walentin\source\repos\StartCourse_3\HttpListener\obj\Release\netcoreapp3.1\HttpListenerProject.csprojAssemblyReference.cache

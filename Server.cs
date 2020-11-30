@@ -9,15 +9,14 @@ namespace HttpListenerProject
     {
         [Obsolete]
         static async Task Main(string[] args)
-        {
-            ConsoleHandler.InitializeEventHandlers();
+        {       
             //проверяем наличие прав админа у пользователя
             if (!UserControls.IsUserAdministrator())
             {
                 Console.WriteLine("Недостаточно полномочий для запуска программы");
                 return;
             }
-
+            InitializeEventHandlers();
             HttpListener listener = new HttpListener();
             string ip = DNSUtility.getIPMachine().ToString(); //получаем адрес машины
             string httpAddress = "http://" + ip + "/";

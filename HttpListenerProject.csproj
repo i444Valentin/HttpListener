@@ -12,7 +12,7 @@
 Prog Lang: C#
 designed by Valentin</Description>
     <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>ser_lab_done_22_22.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>httpListenerProject.snk</AssemblyOriginatorKeyFile>
     <DelaySign>true</DelaySign>
   </PropertyGroup>
 
