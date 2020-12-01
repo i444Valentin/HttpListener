@@ -20,10 +20,18 @@ namespace HttpListenerProject
             HttpListener listener = new HttpListener();
             string ip = DNSUtility.getIPMachine().ToString(); //получаем адрес машины
             string httpAddress = "http://" + ip + "/";
-            listener.Prefixes.Add(httpAddress); //локальный ip этого ПК (можно узнать с помощью команды ipconfig)
-            Console.WriteLine("Сервер будет запущен на адресе: " + httpAddress);
-            listener.Start();
-            Console.WriteLine("Сервер запущен");
+            try
+            {
+                listener.Prefixes.Add(httpAddress); //локальный ip этого ПК (можно узнать с помощью команды ipconfig)
+                Console.WriteLine("Сервер будет запущен на адресе: " + httpAddress);
+                listener.Start();
+                Console.WriteLine("Сервер запущен");
+            }catch(Exception ex)
+            {
+                Console.WriteLine("Не удалось запустить сервер, т.к: " + ex.Message);
+                return;
+            }
+            
             while (true)
             {
                 // метод GetContext блокирует текущий поток, ожидая получение запроса 
